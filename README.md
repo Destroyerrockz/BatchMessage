@@ -7,15 +7,15 @@ Sends a sms and email to multiple people contacts fetched from a sqlite database
 Python (Only tested on 3.6) 
 
 Python modules:-
--Twilio: pip install twilio.
--PyQt5: pip install pyqt5.
--PyQt5 Tools: pip install pyqt5-tools.
+- Twilio: pip install twilio.
+- PyQt5: pip install pyqt5.
+- PyQt5 Tools: pip install pyqt5-tools.
 
 You need to have a:-
 
--sqlite database which contains the contacts i.e email id and phone numbers
--twilio account and your twilio ACCOUNT SID, AUTH TOKEN and Twilio Number
--email account, email id, password and a SSL supported mail server of your email provider. For eg:- smtp.gmail.com
+- sqlite database which contains the contacts i.e email id and phone numbers
+- twilio account and your twilio ACCOUNT SID, AUTH TOKEN and Twilio Number
+- email account, email id, password and a SSL supported mail server of your email provider. For eg:- smtp.gmail.com
 
 ## Steps:-
 
