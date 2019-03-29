@@ -2,7 +2,7 @@
 Sends a sms and email to multiple people contacts fetched from a sqlite database.
 
 
-Requirements: -
+## Requirements: -
 
 Python (Only tested on 3.6) 
 
@@ -17,7 +17,7 @@ You need to have a:-
 -twilio account and your twilio ACCOUNT SID, AUTH TOKEN and Twilio Number
 -email account, email id, password and a SSL supported mail server of your email provider. For eg:- smtp.gmail.com
 
-Steps:-
+## Steps:-
 
 1. Clone the repo.
 
