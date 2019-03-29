@@ -32,7 +32,7 @@ class ab_dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "About"))
 
     def about(self):
         Dialog = QtWidgets.QDialog()
