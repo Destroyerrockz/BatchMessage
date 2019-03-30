@@ -7,6 +7,8 @@ Sends a sms and email to multiple people contacts fetched from a sqlite database
 Python (Only tested on 3.6) 
 
 Python modules:-
+You can install the modules using "**pip install -r requirements.txt**"
+
 - Twilio: pip install twilio.
 - PyQt5: pip install pyqt5.
 - PyQt5 Tools: pip install pyqt5-tools.
