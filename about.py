@@ -22,7 +22,7 @@ class ab_dialog(object):
         self.textBrowser.setOpenExternalLinks(True)
         self.textBrowser.setStyleSheet("color: rgb(0, 0, 0);\n"
 "font: 75 12pt \"MS Shell Dlg 2\";")
-        self.textBrowser.setText("Batch Message is a tool which sends SMS and E-mail to multiple contacts fetched from a sqlite database.\n"
+        self.textBrowser.setText("Batch Message is a tool that sends SMS and E-mail to multiple contacts fetched from a sqlite database.\n"
                                                                  "\nSource:\n\n"
                                                                  "https://github.com/Destroyerrockz/BatchMessage")
         self.textBrowser.setObjectName("textBrowser")
