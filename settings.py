@@ -209,12 +209,12 @@ class set_dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Settings"))
         self.dblbl.setText(_translate("Dialog", "Database File:-"))
-        self.dbname = config.get('General', 'Db_name')
-        self.dbdir = config.get('Sqlite', 'database/uri')
-        if not self.dbdir:
+        self.deffiledir = config.get('Sqlite', 'database/uri')
+        self.deffilename = config.get('General', 'db_name')
+        if not self.deffiledir:
             self.dbselbtn.setText(_translate("Dialog", "Choose File"))
         else:
-            self.dbselbtn.setText(_translate("Dialog", self.dbname))
+            self.dbselbtn.setText(_translate("Dialog", self.deffilename))
         self.tablelbl.setText(_translate("Dialog", "Table Name:-"))
         self.phonecollbl.setText(_translate("Dialog", "Phone Number Column:-"))
         self.emcollbl.setText(_translate("Dialog", "Email Address Column:-"))
@@ -250,7 +250,10 @@ class set_dialog(object):
         email = str(self.emailline.text())
         password = self.passline.text()
         password = base64.b64encode(password.encode()).decode('utf-8')
-        config.set('Sqlite', 'Database/URI', self.filedir)
+        try:
+            config.set('Sqlite', 'Database/URI', self.filedir)
+        except:
+            config.set('Sqlite', 'Database/URI', self.deffiledir)
         config.set('General', 'Table', table)
         config.set('General', 'Phone_column', pcol)
         config.set('General', 'Email_column', ecol)
