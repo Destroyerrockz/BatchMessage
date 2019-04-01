@@ -23,7 +23,7 @@ You need to have a:-
 
 1. Clone the repo.
 
-2. Run mainw.py. Go to File> Settings.
+2. Goto to the repo folder and Run mainw.py. Go to File> Settings.
 
 3. Select your database file and enter the data corresponding to the label in each tab SQLite, Twilio, Email. (I think they are rather self explanatory, I may be wrong)
 
