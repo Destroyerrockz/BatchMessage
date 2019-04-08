@@ -56,9 +56,10 @@ class batchmessage:
             msg.attach(body)
             msg['Subject'] = sub
             msg['From'] = myaddress
-            msg['To'] = ", ".join(self.e)
+            for a in self.e:
+                msg['To'] = a
+                s.send_message(msg)
 
-            s.send_message(msg)
             s.quit()
         except Exception as e:
            self.errormsg(e)
